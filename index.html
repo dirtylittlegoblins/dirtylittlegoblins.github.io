@@ -3,123 +3,278 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"
+    />
+    <script
+      src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js"
+      defer
+    ></script>
+    <script>
+      window.addEventListener("load", function () {
+        window.wpcc.init({
+          border: "thick",
+          corners: "large",
+          colors: {
+            popup: {
+              background: "#000000",
+              text: "#ffffff",
+              border: "#ff5722",
+            },
+            button: { background: "#ff5722", text: "#ffffff" },
+          },
+          position: "bottom",
+          padding: "large",
+          margin: "large",
+          fontsize: "large",
+          content: {
+            href: "/terms-and-conditions.html",
+            message:
+              "This website stores cookies on your computer. These cookies are used to improve our website only. To find out more, see our \n",
+            button: "Accept",
+            link: "Terms and Conditions",
+          },
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="public/css/index.css" />
     <title>Dirty Little Goblins</title>
   </head>
   <body>
-    <header>
-      <img src="" alt="DLG Logo" class="logo" />
-      <nav>
-        <a href="dungeonMasters">For Dungeon Masters</a>
-        <a href="players">For Players</a>
-      </nav>
+    <header class="dlg-nav">
+      <div class="dlg-container">
+        <nav class="navbar navbar-expand">
+          <!-- Bootstrap prefers an anchor tag for utility classes -->
+          <a class="navbar-brand py-0" href="#">
+            <img
+              class="logo"
+              src="public/img/dlg-logo.png"
+              alt="DLG Logo"
+              width="225px"
+            />
+          </a>
+
+          <div class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav py-3">
+              <li class="nav-item">
+                <a
+                  href="dungeonMasters"
+                  class="flex-fill nav-link active dlg-color"
+                  >For Dungeon Masters</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="players" class="flex-fill nav-link active dlg-color"
+                  >For Players</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <section id="dungeonMasters" class="dungeonMasters">
-      <div>
-        <h1 class="title">For Dungeon Masters</h1>
-        <h2 class="subtitle">Be on the same page as your players</h2>
-        <p>
-          Have total control over your campaigns with the
-          <a href="">DLG Quartermaster web app;</a>
-        </p>
-        <ul>
-          <li>
-            <img src="" alt="diamond" />
-            <p>Create and manage your campaigns</p>
-          </li>
-          <li>
-            <img src="" alt="diamond" />
-            <p>See your players’ data including inventory and coins</p>
-          </li>
-          <li>
-            <img src="" alt="diamond" />
-            <p>Lookup Spells and Items in an instant</p>
-          </li>
-        </ul>
-        <button><img src="" alt="screen_icon" /> Get started</button>
-        <button><img src="" alt="screen_icon" /> Watch video</button>
-      </div>
-      <div>
-        <div>video</div>
-        <div>group photo</div>
+    <section id="dungeonMasters" class="dungeon-masters">
+      <div class="dlg-container">
+        <div class="row">
+          <div class="col">
+            <h1 class="title">For Dungeon Masters</h1>
+            <h4 class="subtitle">Be on the same page as your players</h4>
+            <p>
+              Have total control over your campaigns with the
+              <a class="dlg-color" href="">DLG Quartermaster web app;</a>
+            </p>
+            <ul>
+              <li>
+                <img src="public/img/list-icon-dlg.svg" alt="diamond" />
+                <p>Create and manage your campaigns</p>
+              </li>
+              <li>
+                <img src="public/img/list-icon-dlg.svg" alt="diamond" />
+                <p>See your players’ data including inventory and coins</p>
+              </li>
+              <li>
+                <img src="public/img/list-icon-dlg.svg" alt="diamond" />
+                <p>Lookup Spells and Items in an instant</p>
+              </li>
+            </ul>
+            <a class="dlg-button"><i class="fas fa-desktop"></i> Get started</a>
+            <a class="dlg-button"
+              ><i class="fas fa-play-circle"></i> Watch video</a
+            >
+          </div>
+
+          <div class="col">
+            <img
+              src="public/img/quartermaster-preview.png"
+              alt="quartermaster-preview"
+              width="500px"
+            />
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="players" class="players">
-      <div>
-        <div>video</div>
-        <div>debatingKen</div>
-      </div>
-      <div>
-        <h1 class="title">For Players</h1>
-        <h2 class="subtitle">Your characters at your fingertips</h2>
-        <p>
-          Level up your experience with DLG Player;
-        </p>
-        <ul>
-          <li>
-            <img src="" alt="diamond" />
-            <p>Create characters</p>
-          </li>
-          <li>
-            <img src="" alt="diamond" />
-            <p>Track spells</p>
-          </li>
-          <li>
-            <img src="" alt="diamond" />
-            <p>Manage your inventory</p>
-          </li>
-        </ul>
-        <p>
-          All of your fifth edition D&D needs in one place. Connect with
-          <a href="">DLG Quartermaster web app</a> to share all of your spells,
-          stats and stuff.
-        </p>
-        <a href="">
-          <img src="" alt="Download on the App Store" />
-        </a>
-        <a href="">
-          <img src="" alt="Get it on Google Play" />
-        </a>
-        <button><img src="" alt="play_icon" /> Watch video</button>
+      <div class="dlg-container">
+        <div class="row">
+          <div class="col">
+            <img
+              src="public/img/quartermaster-preview.png"
+              alt="inventory-preview"
+              width="500px"
+            />
+          </div>
+
+          <div class="col">
+            <h1 class="title">For Players</h1>
+            <h4 class="subtitle">Your characters at your fingertips</h4>
+            <p>Level up your experience with DLG Player;</p>
+            <ul>
+              <li>
+                <img src="public/img/list-icon-dlg.svg" alt="diamond" />
+                <p>Create characters</p>
+              </li>
+              <li>
+                <img src="public/img/list-icon-dlg.svg" alt="diamond" />
+                <p>Track spells</p>
+              </li>
+              <li>
+                <img src="public/img/list-icon-dlg.svg" alt="diamond" />
+                <p>Manage your inventory</p>
+              </li>
+            </ul>
+            <p>
+              All of your fifth edition D&D needs in one place. Connect with
+              <a href="">DLG Quartermaster web app</a> to share all of your
+              spells, stats and stuff.
+            </p>
+            <a href="">
+              <img
+                src="public/img/app-store.png"
+                alt="Download on the App Store"
+                width="150px"
+              />
+            </a>
+            <a href="">
+              <img
+                src="public/img/play-store.png"
+                alt="Get it on Google Play"
+                width="150px"
+              />
+            </a>
+            <a class="dlg-button"
+              ><i class="fa fa-play-circle"></i> Watch video</a
+            >
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="about us">
-      <p>
-        Product managers and engineers by day, elves and halflings by night.
-      </p>
-      <p>
-        We are Dirty Little Goblins, a group of D&D enthusiasts in Liverpool,
-        UK. For years, we were using pen and paper to take notes during the
-        game. Then it struck, what if all that data was available in one app,
-        powerful yet extremely easy to use and our DMs could access it live?
-      </p>
-      <p>
-        Our D&D 5e Inventory and Spells app is already being used in over 100
-        countries, with nearly a million app launches. We’re working on
-        extending functionality to cover everything that is needed for a great
-        D&D campaign. Whilst still playing ourselves, our goal is to build the
-        best unofficial tools for Dungeons and Dragons players and their Dungeon
-        Masters.
-      </p>
-      <button><img src="" alt="thumbs_up" />Like us on Facebook</button>
+    <section class="about-us">
+      <div class="dlg-container">
+        <div class="row">
+          <div class="col">
+            <h3>Who are these little goblins?</h3>
+            <p>
+              Product managers and engineers by day, elves and halflings by
+              night.
+            </p>
+            <p>
+              We are Dirty Little Goblins, a group of D&D enthusiasts in
+              Liverpool, UK. For years, we were using pen and paper to take
+              notes during the game. Then it struck, what if all that data was
+              available in one app, powerful yet extremely easy to use and our
+              DMs could access it live?
+            </p>
+            <p>
+              Our D&D 5e Inventory and Spells app is already being used in over
+              100 countries, with nearly a million app launches. We’re working
+              on extending functionality to cover everything that is needed for
+              a great D&D campaign. Whilst still playing ourselves, our goal is
+              to build the best unofficial tools for Dungeons and Dragons
+              players and their Dungeon Masters.
+            </p>
+            <a class="dlg-button"
+              ><i class="fa fa-thumbs-up"></i> Like us on Facebook</a
+            >
+          </div>
+
+          <div class="col">
+            <img
+              src="public/img/goblins-dlg.svg"
+              alt="inventory-preview"
+              width="500px"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      <div>
-        <img src="" alt="DLG Logo" />
-        <h4>Cofounded with <a href="">Nova</a></h4>
+    <footer class="dlg-footer">
+      <div class="dlg-container">
+        <div class="row">
+          <div class="col">
+            <img src="public/img/dlg-logo.png" alt="DLG Logo" width="120px" />
+            <p>
+              Cofounded with
+              <span
+                href="http://wearenova.co.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Nova</span
+              >
+            </p>
+          </div>
+
+          <div class="col">
+            <p>Copyright 2020 DLG</p>
+          </div>
+
+          <div class="col">
+            <a href="">T&Cs</a>
+            <a href="">Privacy</a>
+
+            <a href="">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
       </div>
-
-      <h4>Copyright 2020 DLG</h4>
-
-      <a href="">T&Cs</a>
-      <a href="">Privacy</a>
-
-      <a href="">
-        <img src="" alt="Facebook Logo" />
-      </a>
     </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
