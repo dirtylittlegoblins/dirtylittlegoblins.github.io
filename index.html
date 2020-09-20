@@ -3,27 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//use.fontawesome.com" />
+    <link rel="dns-prefetch" href="//s.w.org" />
+    <meta property="og:title" content="DLG" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dirtylittlegoblins.com/" />
+    <meta property="og:site_name" content="DLG" />
+    <meta
+      property="og:description"
+      content="Dungeons &amp; Dragons 5th Edition - DLG"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"
-    />
+    <meta property="og:image" content="" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="icon" href="public/img/favicon.jpg" sizes="192x192" />
+    <link rel="apple-touch-icon" href="public/img/favicon.jpg" />
+
     <script
       src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js"
       defer
@@ -55,8 +51,29 @@
         });
       });
     </script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="public/css/index.css" />
-    <title>Dirty Little Goblins</title>
+    <title>DLG – Dungeons & Dragons 5th Edition</title>
   </head>
   <body>
     <header class="dlg-nav">
@@ -76,13 +93,13 @@
             <ul class="navbar-nav py-3">
               <li class="nav-item">
                 <a
-                  href="dungeonMasters"
+                  href="#dungeonMasters"
                   class="flex-fill nav-link active dlg-color"
                   >For Dungeon Masters</a
                 >
               </li>
               <li class="nav-item">
-                <a href="players" class="flex-fill nav-link active dlg-color"
+                <a href="#players" class="flex-fill nav-link active dlg-color"
                   >For Players</a
                 >
               </li>
@@ -100,7 +117,13 @@
             <h4 class="subtitle">Be on the same page as your players</h4>
             <p>
               Have total control over your campaigns with the
-              <a class="dlg-color" href="">DLG Quartermaster web app;</a>
+              <a
+                class="dlg-color"
+                href="https://app.dirtylittlegoblins.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >DLG Quartermaster web app</a
+              >
             </p>
             <ul>
               <li>
@@ -116,18 +139,42 @@
                 <p>Lookup Spells and Items in an instant</p>
               </li>
             </ul>
-            <a class="dlg-button"><i class="fas fa-desktop"></i> Get started</a>
-            <a class="dlg-button"
-              ><i class="fas fa-play-circle"></i> Watch video</a
+
+            <a
+              data-direction="down"
+              class="dlg-button"
+              href="https://app.dirtylittlegoblins.com/"
+              target="_blank"
+              rel="noopener"
             >
+              <i class="fa fa-desktop"></i>Get started
+            </a>
+
+            <a
+              data-lightbox="iframe"
+              data-direction="down"
+              class="dlg-button"
+              href="https://vimeo.com/414884745"
+            >
+              <i class="fa fa-play-circle"></i>Watch video
+            </a>
           </div>
 
           <div class="col">
-            <img
-              src="public/img/quartermaster-preview.png"
-              alt="quartermaster-preview"
-              width="500px"
-            />
+            <a
+              data-lightbox="iframe"
+              href="https://vimeo.com/414884745"
+              data-toggle="popover"
+              data-trigger="click"
+              data-original-title=""
+              title=""
+            >
+              <img
+                src="public/img/quartermaster-preview.png"
+                alt="quartermaster-preview"
+                width="500px"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -137,11 +184,20 @@
       <div class="dlg-container">
         <div class="row">
           <div class="col">
-            <img
-              src="public/img/quartermaster-preview.png"
-              alt="inventory-preview"
-              width="500px"
-            />
+            <a
+              data-lightbox="iframe"
+              href="https://vimeo.com/414887757"
+              data-toggle="popover"
+              data-trigger="click"
+              data-original-title=""
+              title=""
+            >
+              <img
+                src="public/img/inventory-preview.png"
+                alt="inventory-preview"
+                width="500px"
+              />
+            </a>
           </div>
 
           <div class="col">
@@ -164,25 +220,48 @@
             </ul>
             <p>
               All of your fifth edition D&D needs in one place. Connect with
-              <a href="">DLG Quartermaster web app</a> to share all of your
-              spells, stats and stuff.
+              <a
+                class="dlg-color"
+                href="https://app.dirtylittlegoblins.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >DLG Quartermaster web app</a
+              >
+              to share all of your spells, stats and stuff.
             </p>
-            <a href="">
+
+            <a
+              href="https://apps.apple.com/us/app/dlg-inventory-5e-for-d-d/id1281518837"
+              target="_blank"
+              rel="noopener"
+            >
               <img
                 src="public/img/app-store.png"
-                alt="Download on the App Store"
-                width="150px"
+                alt="Download on the App
+              Store"
+                width="150"
               />
             </a>
-            <a href="">
+
+            <a
+              href="https://play.google.com/store/apps/details?id=com.dlginventory"
+              target="_blank"
+              rel="noopener"
+            >
               <img
                 src="public/img/play-store.png"
                 alt="Get it on Google Play"
-                width="150px"
+                width="150"
               />
             </a>
-            <a class="dlg-button"
-              ><i class="fa fa-play-circle"></i> Watch video</a
+
+            <a
+              class="dlg-button"
+              data-lightbox="iframe"
+              data-direction="down"
+              href="https://vimeo.com/414887757"
+            >
+              <i class="fa fa-play-circle"></i> Watch video</a
             >
           </div>
         </div>
@@ -213,8 +292,15 @@
               to build the best unofficial tools for Dungeons and Dragons
               players and their Dungeon Masters.
             </p>
-            <a class="dlg-button"
-              ><i class="fa fa-thumbs-up"></i> Like us on Facebook</a
+
+            <a
+              class="dlg-button"
+              data-direction="down"
+              href="https://www.facebook.com/DirtyLittleGoblins/"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fa fa-thumbs-up"></i> Like us on Facebook</a
             >
           </div>
 
@@ -236,11 +322,11 @@
             <img src="public/img/dlg-logo.png" alt="DLG Logo" width="120px" />
             <p>
               Cofounded with
-              <span
+              <a
                 href="http://wearenova.co.uk"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Nova</span
+                >Nova</a
               >
             </p>
           </div>
@@ -250,12 +336,17 @@
           </div>
 
           <div class="col">
-            <a href="">T&Cs</a>
-            <a href="">Privacy</a>
-
-            <a href="">
-              <i class="fab fa-facebook"></i>
-            </a>
+            <span>
+              <a href="/terms.html">T&amp;Cs</a>
+              |
+              <a href="/privacy.html">Privacy</a>
+            </span>
+            <a
+              href="https://www.facebook.com/DirtyLittleGoblins/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-facebook"></i
+            ></a>
           </div>
         </div>
       </div>
