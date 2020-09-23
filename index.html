@@ -42,7 +42,7 @@
           margin: "large",
           fontsize: "large",
           content: {
-            href: "/terms-and-conditions.html",
+            href: "/terms.html",
             message:
               "This website stores cookies on your computer. These cookies are used to improve our website only. To find out more, see our \n",
             button: "Accept",
@@ -75,107 +75,81 @@
     <link rel="stylesheet" href="public/css/index.css" />
     <title>DLG – Dungeons & Dragons 5th Edition</title>
   </head>
+
   <body>
     <header class="dlg-nav">
-      <div class="dlg-container">
-        <nav class="navbar navbar-expand">
-          <!-- Bootstrap prefers an anchor tag for utility classes -->
-          <a class="navbar-brand py-0" href="#">
-            <img
-              class="logo"
-              src="public/img/dlg-logo.png"
-              alt="DLG Logo"
-              width="225px"
-            />
-          </a>
+      <nav class="navbar navbar-expand dlg-nav-container">
+        <!-- Bootstrap prefers an anchor tag for utility classes -->
+        <a class="navbar-brand py-0">
+          <img src="public/img/dlg-logo.png" alt="DLG Logo" width="150px" />
+        </a>
 
-          <div class="collapse navbar-collapse justify-content-end">
-            <ul class="navbar-nav py-3">
-              <li class="nav-item">
-                <a
-                  href="#dungeonMasters"
-                  class="flex-fill nav-link active dlg-color"
-                  >For Dungeon Masters</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="#players" class="flex-fill nav-link active dlg-color"
-                  >For Players</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav py-3">
+            <li class="nav-item">
+              <a
+                href="#dungeonMasters"
+                class="flex-fill nav-link dlg-nav-item-orange"
+                >For Dungeon Masters</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="#players"
+                class="flex-fill nav-link dlg-nav-item dlg-link"
+                >For Players</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <section id="dungeonMasters" class="dungeon-masters">
-      <div class="dlg-container">
-        <div class="row">
-          <div class="col">
-            <h1 class="title">For Dungeon Masters</h1>
-            <h4 class="subtitle">Be on the same page as your players</h4>
-            <p>
-              Have total control over your campaigns with the
-              <a
-                class="dlg-color"
-                href="https://app.dirtylittlegoblins.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >DLG Quartermaster web app</a
-              >
-            </p>
-            <ul>
-              <li>
-                <img src="public/img/list-icon-dlg.svg" alt="diamond" />
-                <p>Create and manage your campaigns</p>
-              </li>
-              <li>
-                <img src="public/img/list-icon-dlg.svg" alt="diamond" />
-                <p>See your players’ data including inventory and coins</p>
-              </li>
-              <li>
-                <img src="public/img/list-icon-dlg.svg" alt="diamond" />
-                <p>Lookup Spells and Items in an instant</p>
-              </li>
-            </ul>
-
+      <div class="row dlg-container">
+        <div class="col">
+          <h1 class="dlg-title">For Dungeon Masters</h1>
+          <h2 class="dlg-subtitle">Be on the same page as your players</h2>
+          <p class="dlg-body">
+            Have total control over your campaigns with the
+            <br />
             <a
-              data-direction="down"
-              class="dlg-button"
+              class="dlg-color"
               href="https://app.dirtylittlegoblins.com/"
               target="_blank"
-              rel="noopener"
-            >
-              <i class="fa fa-desktop"></i>Get started
-            </a>
+              rel="noopener noreferrer"
+              >DLG Quartermaster web app</a
+            >;
+          </p>
 
-            <a
-              data-lightbox="iframe"
-              data-direction="down"
-              class="dlg-button"
-              href="https://vimeo.com/414884745"
-            >
-              <i class="fa fa-play-circle"></i>Watch video
-            </a>
-          </div>
+          <ul class="dlg-list">
+            <li>Create and manage your campaigns</li>
+            <li>See your players’ data including inventory and coins</li>
+            <li>Lookup Spells and Items in an instant</li>
+          </ul>
 
-          <div class="col">
-            <a
-              data-lightbox="iframe"
-              href="https://vimeo.com/414884745"
-              data-toggle="popover"
-              data-trigger="click"
-              data-original-title=""
-              title=""
-            >
-              <img
-                src="public/img/quartermaster-preview.png"
-                alt="quartermaster-preview"
-                width="500px"
-              />
-            </a>
-          </div>
+          <a
+            class="dlg-button"
+            href="https://app.dirtylittlegoblins.com/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa fa-desktop"></i>Get started
+          </a>
+
+          <a class="dlg-button" href="https://vimeo.com/414884745">
+            <i class="fa fa-play-circle"></i>Watch video
+          </a>
+        </div>
+
+        <div class="col">
+          <a href="https://vimeo.com/414884745" title="">
+            <img
+              src="public/img/quartermaster-preview.png"
+              alt="quartermaster-preview"
+              width="500px"
+            />
+          </a>
         </div>
       </div>
     </section>
@@ -184,14 +158,7 @@
       <div class="dlg-container">
         <div class="row">
           <div class="col">
-            <a
-              data-lightbox="iframe"
-              href="https://vimeo.com/414887757"
-              data-toggle="popover"
-              data-trigger="click"
-              data-original-title=""
-              title=""
-            >
+            <a href="https://vimeo.com/414887757" title="">
               <img
                 src="public/img/inventory-preview.png"
                 alt="inventory-preview"
@@ -201,25 +168,19 @@
           </div>
 
           <div class="col">
-            <h1 class="title">For Players</h1>
-            <h4 class="subtitle">Your characters at your fingertips</h4>
-            <p>Level up your experience with DLG Player;</p>
-            <ul>
-              <li>
-                <img src="public/img/list-icon-dlg.svg" alt="diamond" />
-                <p>Create characters</p>
-              </li>
-              <li>
-                <img src="public/img/list-icon-dlg.svg" alt="diamond" />
-                <p>Track spells</p>
-              </li>
-              <li>
-                <img src="public/img/list-icon-dlg.svg" alt="diamond" />
-                <p>Manage your inventory</p>
-              </li>
+            <h1 class="dlg-title">For Players</h1>
+            <h2 class="dlg-subtitle">Your characters at your fingertips</h2>
+            <p class="dlg-body">Level up your experience with DLG Player;</p>
+
+            <ul class="dlg-list">
+              <li>Create characters</li>
+              <li>Track spells</li>
+              <li>Manage your inventory</li>
             </ul>
-            <p>
+
+            <p class="dlg-body">
               All of your fifth edition D&D needs in one place. Connect with
+              <br />
               <a
                 class="dlg-color"
                 href="https://app.dirtylittlegoblins.com/"
@@ -230,125 +191,127 @@
               to share all of your spells, stats and stuff.
             </p>
 
-            <a
-              href="https://apps.apple.com/us/app/dlg-inventory-5e-for-d-d/id1281518837"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="public/img/app-store.png"
-                alt="Download on the App
+            <div class="dlg-button-row">
+              <a
+                href="https://apps.apple.com/us/app/dlg-inventory-5e-for-d-d/id1281518837"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  class="dlg-store-button"
+                  src="public/img/app-store.png"
+                  alt="Download on the App
               Store"
-                width="150"
-              />
-            </a>
+                />
+              </a>
 
-            <a
-              href="https://play.google.com/store/apps/details?id=com.dlginventory"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="public/img/play-store.png"
-                alt="Get it on Google Play"
-                width="150"
-              />
-            </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.dlginventory"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  class="dlg-store-button"
+                  src="public/img/play-store.png"
+                  alt="Get it on Google Play"
+                />
+              </a>
 
-            <a
-              class="dlg-button"
-              data-lightbox="iframe"
-              data-direction="down"
-              href="https://vimeo.com/414887757"
-            >
-              <i class="fa fa-play-circle"></i> Watch video</a
-            >
+              <a
+                class="dlg-button"
+                data-lightbox="iframe"
+                data-direction="down"
+                href="https://vimeo.com/414887757"
+              >
+                <i class="fa fa-play-circle"></i> Watch video</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="about-us">
-      <div class="dlg-container">
-        <div class="row">
-          <div class="col">
-            <h3>Who are these little goblins?</h3>
-            <p>
-              Product managers and engineers by day, elves and halflings by
-              night.
-            </p>
-            <p>
-              We are Dirty Little Goblins, a group of D&D enthusiasts in
-              Liverpool, UK. For years, we were using pen and paper to take
-              notes during the game. Then it struck, what if all that data was
-              available in one app, powerful yet extremely easy to use and our
-              DMs could access it live?
-            </p>
-            <p>
-              Our D&D 5e Inventory and Spells app is already being used in over
-              100 countries, with nearly a million app launches. We’re working
-              on extending functionality to cover everything that is needed for
-              a great D&D campaign. Whilst still playing ourselves, our goal is
-              to build the best unofficial tools for Dungeons and Dragons
-              players and their Dungeon Masters.
-            </p>
+      <div class="row dlg-container">
+        <div class="col">
+          <h1 class="dlg-alt-title">Who are these little goblins?</h1>
+          <p class="dlg-body">
+            Product managers and engineers by day, elves and halflings by night.
+          </p>
 
-            <a
-              class="dlg-button"
-              data-direction="down"
-              href="https://www.facebook.com/DirtyLittleGoblins/"
-              target="_blank"
-              rel="noopener"
-            >
-              <i class="fa fa-thumbs-up"></i> Like us on Facebook</a
-            >
-          </div>
+          <p class="dlg-body">
+            We are Dirty Little Goblins, a group of D&D enthusiasts in
+            Liverpool, UK. For years, we were using pen and paper to take notes
+            during the game. Then it struck, what if all that data was available
+            in one app, powerful yet extremely easy to use and our DMs could
+            access it live?
+          </p>
 
-          <div class="col">
-            <img
-              src="public/img/goblins-dlg.svg"
-              alt="inventory-preview"
-              width="500px"
-            />
-          </div>
+          <p class="dlg-body">
+            Our D&D 5e Inventory and Spells app is already being used in over
+            100 countries, with nearly a million app launches. We’re working on
+            extending functionality to cover everything that is needed for a
+            great D&D campaign. Whilst still playing ourselves, our goal is to
+            build the best unofficial tools for Dungeons and Dragons players and
+            their Dungeon Masters.
+          </p>
+
+          <a
+            class="dlg-button u-margin-top-medium"
+            data-direction="down"
+            href="https://www.facebook.com/DirtyLittleGoblins/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa fa-thumbs-up"></i> Like us on Facebook</a
+          >
+        </div>
+
+        <div class="col">
+          <img
+            src="public/img/goblins-dlg.svg"
+            alt="inventory-preview"
+            width="500px"
+          />
         </div>
       </div>
     </section>
 
-    <footer class="dlg-footer">
-      <div class="dlg-container">
-        <div class="row">
-          <div class="col">
-            <img src="public/img/dlg-logo.png" alt="DLG Logo" width="120px" />
-            <p>
-              Cofounded with
-              <a
-                href="http://wearenova.co.uk"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Nova</a
-              >
-            </p>
-          </div>
+    <footer class="row dlg-footer">
+      <div class="col">
+        <img src="public/img/dlg-logo.png" alt="DLG Logo" width="120px" />
 
-          <div class="col">
-            <p>Copyright 2020 DLG</p>
-          </div>
+        <p style="margin-top: 18px" class="dlg-footer-body">
+          Cofounded with
+          <a
+            class="dlg-link"
+            href="http://wearenova.co.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Nova
+          </a>
+        </p>
+      </div>
 
-          <div class="col">
-            <span>
-              <a href="/terms.html">T&amp;Cs</a>
-              |
-              <a href="/privacy.html">Privacy</a>
-            </span>
-            <a
-              href="https://www.facebook.com/DirtyLittleGoblins/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-facebook"></i
-            ></a>
-          </div>
-        </div>
+      <div class="col d-inline-flex justify-content-center">
+        <p class="dlg-footer-body">©2020 DLG</p>
+      </div>
+
+      <div class="col d-inline-flex justify-content-end">
+        <span class="dlg-footer-body">
+          <a class="dlg-link" href="/terms.html">T&amp;Cs |</a>
+          <a class="dlg-link" href="/privacy.html">Privacy</a>
+        </span>
+
+        <a
+          style="margin-left: 18px"
+          class="dlg-link"
+          href="https://www.facebook.com/DirtyLittleGoblins/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i style="font-size: 26px" class="fab fa-facebook"></i
+        ></a>
       </div>
     </footer>
 
