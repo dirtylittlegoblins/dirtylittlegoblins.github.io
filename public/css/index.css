@@ -219,11 +219,24 @@ a {
   min-width: 350px;
 }
 
+@media (max-width: 400px) {
+  .dlg-product-info {
+    min-width: 150px;
+  }
+}
+
 .dlg-product-image {
   margin-top: 20px;
   width: 100%;
   min-width: 350px;
   max-width: 500px;
+}
+
+@media (max-width: 400px) {
+  .dlg-product-image {
+    min-width: 150px;
+    max-width: 300px;
+  }
 }
 
 .dlg-title {
