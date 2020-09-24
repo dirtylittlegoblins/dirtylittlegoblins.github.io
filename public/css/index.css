@@ -142,6 +142,7 @@ a {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 15px;
 }
 
 .dlg-nav {
@@ -212,6 +213,17 @@ a {
 
 .dlg-nav-item-orange:visited {
   color: #ff5722;
+}
+
+.dlg-product-info {
+  min-width: 350px;
+}
+
+.dlg-product-image {
+  margin-top: 20px;
+  width: 100%;
+  min-width: 350px;
+  max-width: 500px;
 }
 
 .dlg-title {
