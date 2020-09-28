@@ -153,14 +153,24 @@
               <i class="fa fa-desktop"></i>Get started
             </a>
 
-            <a class="dlg-button" href="https://vimeo.com/414884745">
+            <a
+              class="dlg-button launchModal"
+              data-toggle="modal"
+              data-target="#videoModal"
+              data-source="414884745"
+            >
               <i class="fa fa-play-circle"></i>Watch video
             </a>
           </div>
         </div>
 
         <div class="col col-m-12 text-center">
-          <a href="https://vimeo.com/414884745" title="">
+          <a
+            class="launchModal"
+            data-toggle="modal"
+            data-target="#videoModal"
+            data-source="414884745"
+          >
             <img
               src="public/img/quartermaster-preview.png"
               alt="quartermaster-preview"
@@ -174,7 +184,12 @@
     <section id="players" class="players">
       <div class="row dlg-container">
         <div class="col col-m-12 text-center">
-          <a href="https://vimeo.com/414887757" title="">
+          <a
+            class="launchModal"
+            data-toggle="modal"
+            data-target="#videoModal"
+            data-source="414887757"
+          >
             <img
               src="public/img/inventory-preview.png"
               alt="inventory-preview"
@@ -234,10 +249,10 @@
             </a>
 
             <a
-              class="dlg-button"
-              data-lightbox="iframe"
-              data-direction="down"
-              href="https://vimeo.com/414887757"
+              class="dlg-button launchModal"
+              data-toggle="modal"
+              data-target="#videoModal"
+              data-source="414887757"
             >
               <i class="fa fa-play-circle"></i> Watch video</a
             >
@@ -294,6 +309,37 @@
       </div>
     </section>
 
+    <!-- Modal is hidden by default -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      aria-labelledby="video"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" style="max-width: 900px">
+        <div class="modal-content">
+          <div style="padding: 56.25% 0 0 0; position: relative">
+            <iframe
+              id="iframeVideo"
+              src="https://player.vimeo.com/video/414884745?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+      </div>
+    </div>
+
     <footer class="row dlg-footer">
       <div class="col">
         <img src="public/img/dlg-logo.png" alt="DLG Logo" width="120px" />
@@ -347,5 +393,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="public/js/index.js" />
   </body>
 </html>
