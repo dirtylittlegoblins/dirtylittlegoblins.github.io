@@ -5,11 +5,7 @@ $(document).ready(function () {
     var player = new Vimeo.Player(iframe);
 
     if (triggerElement.dataset.source) {
-      player.loadVideo(
-        "https://player.vimeo.com/video/" +
-          triggerElement.dataset.source +
-          "?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-      );
+      player.loadVideo(triggerElement.dataset.source);
     }
   }
 
