@@ -145,6 +145,12 @@ a {
   padding-top: 15px;
 }
 
+@media (max-width: 1000px) {
+  .dlg-nav-container {
+    padding-bottom: 15px;
+  }
+}
+
 .dlg-nav {
   background-color: #494949;
 }
@@ -272,6 +278,34 @@ a {
   font-size: 1.125rem;
   margin-bottom: 0;
   letter-spacing: 0.3px;
+}
+
+@media (max-width: 1000px) {
+  .dlg-title {
+    font-size: 2.3rem;
+  }
+
+  .dlg-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .dlg-title {
+    font-size: 1.8rem;
+  }
+
+  .dlg-alt-title {
+    font-size: 1.5rem;
+  }
+
+  .dlg-body {
+    font-size: 1rem;
+  }
+
+  .dlg-list li {
+    font-size: 1rem;
+  }
 }
 
 .u-margin-top-medium {
